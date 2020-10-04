@@ -15,14 +15,6 @@ public class Esconder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (tiempo >= tiempoActiva)
-        {
-            gameObject.SetActive(true);
-        }
-        else if (tiempoActiva + 4 < tiempo)
-        {
-            gameObject.SetActive(false);
-        }
-        tiempo += Time.deltaTime;    
+        tiempo += Time.deltaTime;
     }
 }

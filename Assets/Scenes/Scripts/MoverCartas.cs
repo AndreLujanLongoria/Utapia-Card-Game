@@ -6,6 +6,7 @@ public class MoverCartas : MonoBehaviour
 {
     public float positionX;
     public float positionY;
+    public int selection = 1;
     public GameManager gameManager;
 
     private void Start()
@@ -16,7 +17,7 @@ public class MoverCartas : MonoBehaviour
 
     private void Update()
     {
-        if (gameManager.selection == 1)
+        if (gameManager.selection == selection)
         {
             gameObject.transform.position = new Vector2(positionX, positionY);
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
